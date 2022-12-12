@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>대림창고 갤러리</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){	
+	//창넓이가 padding 포함 1200픽셀 미만이면 이미지 높이 값을 부모창에 넘겨준다. innerWidth를 쓴 이유!
+	if( $(window).innerWidth()<1200 ){
+		const x = $("img").eq(0).height();
+		//console.log(x);		
+		$("#header", parent.document).height(x);		
+	}
+	
+});////끝
+</script>
+<link rel="stylesheet" href="css/cafe.css">
+</head>  
+<body>
+		<header id="header">
+		    <nav id="top">
+		        <a href="index.html">성수동 대림창고 갤러리</a>
+		    </nav>
+			<nav id="menu">
+				<a href="interior.html">인테리어</a>
+				<a href="menu.html">메뉴</a>
+				<a href="intro.html">매장 소개</a>
+				<a href="map.html">오시는 길</a>
+			</nav>
+		</header>
+</body>
+</html>
