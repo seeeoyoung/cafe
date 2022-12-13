@@ -60,6 +60,6 @@ main #thumb     {display:flex; border:0px solid blue;}
 #text div.aa    {display:flex; border:0px solid red; width:90%; margin:auto;
                  justify-content:space-between;background:white;}
 .t03 .aa img    {width:350px; background:white;}
-#text .t01 h2      {background:green;}
+
 
 #footer {width:100%; display:block; border:none;}
