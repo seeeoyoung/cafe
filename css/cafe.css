@@ -7,17 +7,59 @@
 a:hover {transform:translateY(-20px);}*/
 
 
-* {margin:0; padding:0; box-sizing:border-box; }
-img {display:block; max-width:1000px;}
-#layout {max-width:1200px; margin:auto; border:0px solid red;}
+*       {margin:0; padding:0; box-sizing:border-box;  background-color:skyblue;}
+img     {display:block; max-width:100%; background:white;}
+#layout {max-width:1200px; margin:auto; border:2px solid red; background:white; }
 
-a {text-decoration:none;}
+html      {scroll-behavior:smooth;}
+html,body {font:10pt/200% "맑은 고딕";}
+a         {text-decoration:none; color:black;}
 
-#header {width:100%; border:none;}
+#header  {width:100%; border:none; text-align:center; font-size:1.3rem; padding:21px;
+          border:1px solid white; background:white;}
+#top img {display:flex; align-items:center; margin:auto; border:0px solid black;} 
+#menu    {display:flex; justify-content:space-between;
+          padding:2px 130px 10px 130px;}
+#menu h3 {background:white;}
+
 #big {max-height:700px;margin:auto; margin-bottom:40px; padding:20px; border:1px solid gray;}
-main section {overflow:hidden; margin-bottom:40px;}
-main section h2 {display:none;}
-main #thumb {display:flex; border:0px solid blue; }
-#thumb img {width:200px; padding:10px;}
 
-#footer {width:100%; height:199px; display:block; border:none;}
+main            {background:white;}
+main section    {overflow:hidden; margin-bottom:40px;}
+main section h6 {display:none;}
+main #thumb     {display:flex; border:0px solid blue;}
+#thumb img      {width:200px; padding:10px;}
+
+#topmenu        {background:white;}
+#topmenu h1     {border-top:2px solid black; text-align:center; font-size:1.8rem;
+                 padding-top:20px; background:white; max-width:72%; margin:auto;}
+#topmenu div    {display:flex; justify-content:space-between;
+                 font-size:1.5rem; padding:30px 180px; background:white;}
+#topmenu div a  {background:white; border:1px solid black; display:inline-block; width:22%;
+                 text-align:center; padding:8px;}
+#topmenu div a:hover {background:#cd9871;}
+#topmenu img    {display:flex; align-itmes:center; margin:auto;}
+#name           {background:white;}
+#name h3        {font-size:1.5rem; background:white; padding:5px 3px;
+                 border-top:1px solid black; border-bottom:1px solid black;
+		         max-width:72%; margin:auto;}
+#name div       {display:flex; justify-content:space-between; flex-wrap:wrap;
+                 max-width:70%; margin:40px auto 0px auto; background:white;
+                 position:relative;}
+#name section   {border:0px solid red; position:relative; cursor:pointer; overflow:hidden;                 margin-bottom:30px;}
+#name section:hover h1 {opacity:1;}
+#name div h1    {border:0px solid red;  position:absolute;
+                 width:100%; height:100%; top:0; background:rgba(0,0,0,0.8); color:white;
+				 text-align:center; padding-top:40%; opacity:0; transition:0.5s;}
+
+#intro section  {background:white;}				 
+#intro h1       {border-top:2px solid black; text-align:center; font-size:1.8rem;
+                 padding-top:20px; background:white; max-width:72%; margin:auto;}
+#text           {background:white;}
+#text h2        {text-align:center; padding:30px; background:white;}
+#text div.aa    {display:flex; border:0px solid red; width:90%; margin:auto;
+                 justify-content:space-between;background:white;}
+.t03 .aa img    {width:350px; background:white;}
+#text .t01 h2      {background:green;}
+
+#footer {width:100%; display:block; border:none;}
