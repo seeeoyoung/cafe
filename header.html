@@ -5,23 +5,14 @@
 <meta name="viewport" content="width=device-width">
 <title>대림창고 갤러리</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-/*$(document).ready(function(){	
-	//창넓이가 padding 포함 1200픽셀 미만이면 이미지 높이 값을 부모창에 넘겨준다. innerWidth를 쓴 이유!
-	if( $(window).innerWidth()<1200 ){
-		const x = $("img").eq(0).height();
-		//console.log(x);		
-		$("#header", parent.document).height(x);		
-	}
-	
-});////끝*/
-</script>
+<script src="js/cafe.js"></script>
+
 <style>
 body,header,nav,a {background-color:white;}
-body { overflow:hidden;}
+body {overflow:hidden;}
 #menu h3 a {border:0px solid black; display:inline-block; width:200px; text-align:center;
-            padding:5px 0 4px 0; z-index:999;}
-
+            padding:5px 0 4px 0;}
+#menu a:hover {background:#cd9871; color:white;}
 </style>
 <link rel="stylesheet" href="css/cafe.css">
 </head>  
@@ -30,7 +21,7 @@ body { overflow:hidden;}
 		    <nav id="top">
 		        <a href="index.html" target="_parent"><img src="images/title.jpg" alt="제목"></a>
 		    </nav>
-			<nav id="menu">
+			<nav id="menu" class="menuOver">
 			 <h3><a href="interior.html" target="_parent">인테리어</a></h3>
 			 <h3><a href="menu.html" target="_parent">메뉴</a></h3>
 			 <h3><a href="intro.html" target="_parent">매장 소개</a></h3>
