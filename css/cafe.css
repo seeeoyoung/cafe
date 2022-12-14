@@ -29,7 +29,7 @@ main section    {overflow:hidden; margin-bottom:40px;}
 main section h6 {display:none;}
 main #thumb     {display:flex; border:0px solid blue;}
 #thumb img      {width:200px; padding:10px;}
-#thumb img:hover{transform:scale(1.05);}
+#thumb img:hover{transform:scale(1.05); cursor:pointer;}
 
 #topmenu        {background:white;}
 #topmenu h1     {border-top:2px solid black; text-align:center; font-size:1.8rem;
