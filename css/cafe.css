@@ -7,17 +7,17 @@
 a:hover {transform:translateY(-20px);}*/
 
 
-*       {margin:0; padding:0; box-sizing:border-box;  background-color:skyblue;}
+*       {margin:0; padding:0; box-sizing:border-box;  background-color:beige;}
 img     {display:block; max-width:100%; background:white;}
-#layout {max-width:1200px; margin:auto; border:2px solid red; background:white; }
+#layout {max-width:1200px; margin:auto; border:0px solid red; background:white; }
 
 html      {scroll-behavior:smooth;}
 html,body {font:10pt/200% "맑은 고딕";}
 a         {text-decoration:none; color:black;}
 
 #header  {width:100%; border:none; text-align:center; font-size:1.3rem; padding:21px;
-          border:1px solid white; background:white; z-index:999;}
-#top img {display:flex; align-items:center; margin:auto; border:1px solid black;} 
+          border:1px solid white; background:white;}
+#top img {display:flex; align-items:center; margin:auto; border:0px solid black;} 
 #menu    {display:flex; justify-content:space-between;
           padding:2px 130px 10px 130px;}
 #menu h3 {background:white;}
@@ -29,6 +29,7 @@ main section    {overflow:hidden; margin-bottom:40px;}
 main section h6 {display:none;}
 main #thumb     {display:flex; border:0px solid blue;}
 #thumb img      {width:200px; padding:10px;}
+#thumb img:hover{transform:scale(1.05);}
 
 #topmenu        {background:white;}
 #topmenu h1     {border-top:2px solid black; text-align:center; font-size:1.8rem;
@@ -56,10 +57,24 @@ main #thumb     {display:flex; border:0px solid blue;}
 #intro h1       {border-top:2px solid black; text-align:center; font-size:1.8rem;
                  padding-top:20px; background:white; max-width:72%; margin:auto;}
 #text           {background:white;}
-#text h2        {text-align:center; padding:30px; background:white;}
-#text div.aa    {display:flex; border:0px solid red; width:90%; margin:auto;
-                 justify-content:space-between;background:white;}
-.t03 .aa img    {width:350px; background:white;}
+#text h2        {text-align:center; padding:30px;}
+.t01 h2         {background:#ddcaac}
+.t01 div        {background:#ddcaac}
+.t02 h2         {background:#ccb499}
+.t02 div        {background:#ccb499}
+.t03 h2         {background:#b6a18a}
+.t03 div        {background:#b6a18a}
+#text div.aa    {display:flex; width:100%; padding:10px 40px;
+                 justify-content:space-between;}
+.t03 .aa img    {width:350px; background:red;}
+
+#map            {display:flex;}
+.map            {margin:0 20px 40px 100px; background:white;}
+#map section    {background:white; margin:auto; padding-right:80px;}
+#map section>div:nth-child(1) {margin-bottom:10px; border:0px solid red;}
+#map div        {background:white; display:flex;}
+#map div span   {background:white; font-size:2rem; margin-right:5px;}
+#map div p      {background:white; font-size:1.3rem;}
 
 
 #footer {width:100%; display:block; border:none;}
