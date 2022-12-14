@@ -16,7 +16,7 @@ html,body {font:10pt/200% "맑은 고딕";}
 a         {text-decoration:none; color:black;}
 
 #header  {width:100%; border:none; text-align:center; font-size:1.3rem; padding:21px;
-          border:1px solid white; background:white; z-index:1;}
+          border:1px solid white; background:white; z-index:999;}
 #top img {display:flex; align-items:center; margin:auto; border:1px solid black;} 
 #menu    {display:flex; justify-content:space-between;
           padding:2px 130px 10px 130px;}
