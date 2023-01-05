@@ -7,20 +7,29 @@
 a:hover {transform:translateY(-20px);}*/
 
 
-*       {margin:0; padding:0; box-sizing:border-box;  background-color:beige;}
+*       {margin:0; padding:0; box-sizing:border-box;  background-color:white;}
 img     {display:block; max-width:100%; background:white;}
-#layout {max-width:1200px; margin:auto; border:0px solid red; background:white; }
+#layout {max-width:1200px; margin:auto; border:0px solid red;}
 
 html      {scroll-behavior:smooth;}
 html,body {font:10pt/200% "맑은 고딕";}
 a         {text-decoration:none; color:black;}
 
-#header  {width:100%; border:none; text-align:center; font-size:1.3rem; padding:21px;
-          border:1px solid white; background:white;}
+body,header,nav,a {background-color:beige;}
+
+
+#header  {width:100%; border:none; text-align:center; font-size:1.3rem; 
+          padding:20px 0 21px 0; border:1px solid white; background:white;}
+#top     {background-color:white;}
 #top img {display:flex; align-items:center; margin:auto; border:0px solid black;} 
+
 #menu    {display:flex; justify-content:space-between;
-          padding:2px 130px 10px 130px;}
+          padding:2px 70px 10px 70px; margin:auto;width:100%;padding:20px; padding-bottom:0; background-color:white;}
 #menu h3 {background:white;}
+#menu h3 a {padding:10px 35px; text-align:center; background-color:white;}
+#menu a:hover,a.act {background:#cd9871 !important; color:white;}
+
+
 
 #big {max-height:700px;margin:auto; margin-bottom:40px; padding:20px; border:1px solid gray;}
 
@@ -28,13 +37,14 @@ main            {background:white;}
 main section    {overflow:hidden; margin-bottom:40px;}
 main section h6 {display:none;}
 main #thumb     {display:flex; border:0px solid blue;}
-#thumb img      {width:200px; padding:10px;}
+#thumb img      {width:16.7%; padding:10px;}
 #thumb img:hover{transform:scale(1.05); cursor:pointer;}
 
 #topmenu        {background:white;}
 #topmenu h1     {border-top:2px solid black; text-align:center; font-size:1.8rem;
                  padding-top:20px; background:white; max-width:72%; margin:auto;}
 #topmenu div    {display:flex; justify-content:space-between;
+                  border:0px solid red;
                  font-size:1.5rem; padding:30px 180px; background:white;}
 #topmenu div a  {background:white; border:1px solid black; display:inline-block; width:22%;
                  text-align:center; padding:8px;}
@@ -57,6 +67,7 @@ main #thumb     {display:flex; border:0px solid blue;}
 #intro h1       {border-top:2px solid black; text-align:center; font-size:1.8rem;
                  padding-top:20px; background:white; max-width:72%; margin:auto;}
 #text           {background:white;}
+#text img       {width:30%;}
 #text h2        {text-align:center; padding:30px;}
 .t01 h2         {background:#ddcaac}
 .t01 div        {background:#ddcaac}
@@ -69,12 +80,38 @@ main #thumb     {display:flex; border:0px solid blue;}
 .t03 .aa img    {width:350px; background:red;}
 
 #map            {display:flex;}
-.map            {margin:0 20px 40px 100px; background:white;}
+.map            {margin:5% 5% 10% 10%; background:white;
+                 border:none;
+                 width:50%; height:600px;}
 #map section    {background:white; margin:auto; padding-right:80px;}
 #map section>div:nth-child(1) {margin-bottom:10px; border:0px solid red;}
 #map div        {background:white; display:flex;}
-#map div span   {background:white; font-size:2rem; margin-right:5px;}
+#map div span   {background:white; font-size:2rem; margin-right:5px;
+                }
 #map div p      {background:white; font-size:1.3rem;}
 
 
 #footer {width:100%; display:block; border:none;}
+
+/************************/
+ @media(max-width:600px){
+#menu    {display:flex; text-align:center;
+          padding:2px 5px 10px 5px; border:0px solid red;
+		  font-size:1rem; }
+#top img  {width:80%;}
+#menu h3 a {width:22vw; border:0px solid red; padding:6px 5px;}
+
+#thumb img  {width:16.7%; padding:5px;}
+
+#topmenu div {padding:30px 0;}
+#topmenu div a {width:25%;}
+
+#map            {display:block;}
+.map            {padding:auto; background:white;
+                 border:none; width:80%; height:400px;
+                 align-items:center;}
+#map section    {padding:auto; border:1px solid red;}
+#map div        {display:inline; text-align:center; padding:auto; }
+#map div span   {display:inline; text-align:center; padding:auto;}
+
+ }

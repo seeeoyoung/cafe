@@ -8,4 +8,18 @@ $(document).ready(function(){
 		$("#big").attr("src",imgSrc);
 	});
 	
+	//메뉴 버튼 클릭하면 색 바뀌기.
+   // $("#menu h3").click(function(){
+	//});	
+	
+	//스크롤
+	 /*$("#menu a").click(function(){
+		 $(this).addClass(
+		 "act"		 
+	 });*/
+	 $("#interior #menu h3").eq(0).children().addClass('act');
+	 $("#menus #menu h3").eq(1).children().addClass('act');
+	 $("#intros #menu h3").eq(2).children().addClass('act');
+	 $("#maps #menu h3").eq(3).children().addClass('act');
+	
 });//////all end
