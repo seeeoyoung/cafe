@@ -19,7 +19,7 @@ body,header,nav,a {background-color:beige;}
 
 
 #header  {width:100%; border:none; text-align:center; font-size:1.3rem; 
-          padding:20px 0 21px 0; border:1px solid white; background:white;}
+          padding:20px 0 20px 0; border:1px solid white; background:white;}
 #top     {background-color:white;}
 #top img {display:flex; align-items:center; margin:auto; border:0px solid black;} 
 
