@@ -96,22 +96,25 @@ main #thumb     {display:flex; border:0px solid blue;}
 /************************/
  @media(max-width:600px){
 #menu    {display:flex; text-align:center;
-          padding:2px 5px 10px 5px; border:0px solid red;
+          padding:10px 5px 8px 5px; border:0px solid red;
 		  font-size:1rem; }
 #top img  {width:80%;}
-#menu h3 a {width:22vw; border:0px solid red; padding:6px 5px;}
+#menu h3 a {width:20vw; border:0px solid red; padding:6px 5px;}
 
 #thumb img  {width:16.7%; padding:5px;}
 
 #topmenu div {padding:30px 0;}
 #topmenu div a {width:25%;}
 
-#map            {display:block;}
+#intro .aa img {width:32%;}
+
+#map            {display:block; }
 .map            {padding:auto; background:white;
                  border:none; width:80%; height:400px;
                  align-items:center;}
-#map section    {padding:auto; border:1px solid red;}
-#map div        {display:inline; text-align:center; padding:auto; }
-#map div span   {display:inline; text-align:center; padding:auto;}
+#map section    {padding:auto; text-align:center; padding-bottom:20px;}
+#map div        {display:inline;}
+#map div span   {display:inline; padding-left:90px;}
+#map section p {font-size:0.9rem; border:0px solid red; width:120%; padding-left:50px;}
 
  }
